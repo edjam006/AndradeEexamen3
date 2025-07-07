@@ -3,13 +3,15 @@
     x:Class="AndradeEexamen3.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AndradeEexamen3"
+    xmlns:local="clr-namespace:AndradeEexamen3.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="AndradeEexamen3">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <ShellContent Title="Registro" ContentTemplate="{DataTemplate local:RegistroPage}" Route="RegistroPage" />
+        <ShellContent Title="Lista" ContentTemplate="{DataTemplate local:ListaVehiculosPage}" Route="ListaVehiculosPage"/>
+        <ShellContent Title="Logs" ContentTemplate="{DataTemplate local:LogsPage}" Route="LogsPage"/>
+        
+        
+    </TabBar>
 </Shell>

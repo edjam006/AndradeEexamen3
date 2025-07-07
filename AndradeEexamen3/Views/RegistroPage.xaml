@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndradeEexamen3.Views.RegistroPage"
+             Title="RegistroPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Entry Placeholder="Marca" Text="{Binding NuevoVehiculo.Marca}" />
+            <Entry Placeholder="Modelo" Text="{Binding NuevoVehiculo.Modelo}" />
+            <Entry Placeholder="Año de Fabricación" Keyboard="Numeric" Text="{Binding NuevoVehiculo.AnioFabricacion}" />
+            <Entry Placeholder="Placa" Text="{Binding NuevoVehiculo.Placa}" />
+            <Button Text="Guardar Vehículo" Command="{Binding GuardarCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
