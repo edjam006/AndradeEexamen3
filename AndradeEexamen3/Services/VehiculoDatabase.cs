@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AndradeEexamen3.Services
 {
-    class VehiculoDatabase
+    public class VehiculoDatabase
     {
         private readonly SQLiteAsyncConnection _database;
 

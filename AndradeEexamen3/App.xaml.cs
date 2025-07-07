@@ -1,10 +1,12 @@
-﻿namespace AndradeEexamen3
+﻿using AndradeEexamen3.Services;
+
+namespace AndradeEexamen3
 {
     public partial class App : Application
     {
-        public static Services.VehiculoDatabase VehiculoDB { get; private set; }
+        public static VehiculoDatabase? VehiculoDB { get; private set; }
 
-        public App(Services.VehiculoDatabase db)
+        public App(VehiculoDatabase db)
         {
             InitializeComponent();
             VehiculoDB = db;
