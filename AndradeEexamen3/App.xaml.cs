@@ -4,7 +4,7 @@ namespace AndradeEexamen3
 {
     public partial class App : Application
     {
-        public static VehiculoDatabase? VehiculoDB { get; private set; }
+        public static VehiculoDatabase VehiculoDB { get; private set; }
 
         public App(VehiculoDatabase db)
         {
